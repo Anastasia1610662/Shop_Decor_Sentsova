@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Shop_Decor_Sentsova
 {
-    public partial class fWork : Form
+    public partial class fOrderWork : Form
     {
-        public fWork()
+        public fOrderWork()
         {
             InitializeComponent();
         }

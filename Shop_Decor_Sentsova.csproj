@@ -46,14 +46,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="fAuth.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="fAuth.Designer.cs">
+      <DependentUpon>fAuth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fOrders.Designer.cs">
+      <DependentUpon>fOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fProducts.Designer.cs">
+      <DependentUpon>fProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTicket.Designer.cs">
+      <DependentUpon>fTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fOrderWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fOrderWork.Designer.cs">
+      <DependentUpon>fOrderWork.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fAuth.resx">
+      <DependentUpon>fAuth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fOrders.resx">
+      <DependentUpon>fOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fOrderWork.resx">
+      <DependentUpon>fOrderWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fProducts.resx">
+      <DependentUpon>fProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTicket.resx">
+      <DependentUpon>fTicket.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

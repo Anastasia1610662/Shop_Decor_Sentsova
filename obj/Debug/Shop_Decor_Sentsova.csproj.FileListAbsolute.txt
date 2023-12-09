@@ -1,0 +1,14 @@
+D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\bin\Debug\Shop_Decor_Sentsova.exe.config
+D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\bin\Debug\Shop_Decor_Sentsova.exe
+D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\bin\Debug\Shop_Decor_Sentsova.pdb
+D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\obj\Debug\Shop_Decor_Sentsova.csproj.AssemblyReference.cache
+D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\obj\Debug\Shop_Decor_Sentsova.fAuth.resources
+D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\obj\Debug\Shop_Decor_Sentsova.fOrders.resources
+D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\obj\Debug\Shop_Decor_Sentsova.fOrderWork.resources
+D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\obj\Debug\Shop_Decor_Sentsova.fProducts.resources
+D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\obj\Debug\Shop_Decor_Sentsova.fTicket.resources
+D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\obj\Debug\Shop_Decor_Sentsova.Properties.Resources.resources
+D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\obj\Debug\Shop_Decor_Sentsova.csproj.GenerateResource.cache
+D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\obj\Debug\Shop_Decor_Sentsova.csproj.CoreCompileInputs.cache
+D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\obj\Debug\Shop_Decor_Sentsova.exe
+D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\obj\Debug\Shop_Decor_Sentsova.pdb

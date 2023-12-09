@@ -156,7 +156,7 @@ namespace Shop_Decor_Sentsova
 
         private void ShowProducts()
         {
-            fProducts product = new fProducts();
+            fProducts product = new fProducts(user,SQL_CONNECTION_STRING);
             this.Hide();
             product.ShowDialog(this);
             this.Show();
