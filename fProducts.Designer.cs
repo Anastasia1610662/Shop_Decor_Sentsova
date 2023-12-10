@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -62,6 +63,10 @@
             this.picProduct = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cmsAdd = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.добавитьКЗакToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.удалитьТоварToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.добавитьТоварToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.pnlUp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
@@ -74,6 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picProduct)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.cmsAdd.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -158,6 +164,7 @@
             this.lbSortingPrice.Name = "lbSortingPrice";
             this.lbSortingPrice.Size = new System.Drawing.Size(232, 31);
             this.lbSortingPrice.TabIndex = 3;
+            this.lbSortingPrice.SelectedIndexChanged += new System.EventHandler(this.lbSortingPrice_SelectedIndexChanged);
             // 
             // lblSortingPrice
             // 
@@ -205,6 +212,7 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProducts.ContextMenuStrip = this.cmsAdd;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Comic Sans MS", 9F);
@@ -228,6 +236,8 @@
             this.dgvProducts.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvProducts.Size = new System.Drawing.Size(977, 425);
             this.dgvProducts.TabIndex = 5;
+            this.dgvProducts.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dgvProducts_RowsAdded);
+            this.dgvProducts.SelectionChanged += new System.EventHandler(this.dgvProducts_SelectionChanged);
             // 
             // pnlDown
             // 
@@ -260,6 +270,7 @@
             this.btnShowOrder.Text = "Просмотр заказа";
             this.btnShowOrder.UseVisualStyleBackColor = false;
             this.btnShowOrder.Visible = false;
+            this.btnShowOrder.Click += new System.EventHandler(this.btnShowOrder_Click);
             // 
             // btnWork
             // 
@@ -275,6 +286,7 @@
             this.btnWork.Text = "Работа с заказами";
             this.btnWork.UseVisualStyleBackColor = false;
             this.btnWork.Visible = false;
+            this.btnWork.Click += new System.EventHandler(this.btnWork_Click);
             // 
             // btnClose
             // 
@@ -467,6 +479,39 @@
             this.panel2.Size = new System.Drawing.Size(977, 425);
             this.panel2.TabIndex = 6;
             // 
+            // cmsAdd
+            // 
+            this.cmsAdd.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.добавитьКЗакToolStripMenuItem,
+            this.удалитьТоварToolStripMenuItem,
+            this.добавитьТоварToolStripMenuItem});
+            this.cmsAdd.Name = "cmsAdd";
+            this.cmsAdd.Size = new System.Drawing.Size(173, 70);
+            this.cmsAdd.Text = "Формирование заказа";
+            // 
+            // добавитьКЗакToolStripMenuItem
+            // 
+            this.добавитьКЗакToolStripMenuItem.Name = "добавитьКЗакToolStripMenuItem";
+            this.добавитьКЗакToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.добавитьКЗакToolStripMenuItem.Text = "Добавить к заказу";
+            this.добавитьКЗакToolStripMenuItem.Click += new System.EventHandler(this.добавитьКЗакToolStripMenuItem_Click);
+            // 
+            // удалитьТоварToolStripMenuItem
+            // 
+            this.удалитьТоварToolStripMenuItem.Name = "удалитьТоварToolStripMenuItem";
+            this.удалитьТоварToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.удалитьТоварToolStripMenuItem.Text = "Удалить товар";
+            this.удалитьТоварToolStripMenuItem.Visible = false;
+            this.удалитьТоварToolStripMenuItem.Click += new System.EventHandler(this.удалитьТоварToolStripMenuItem_Click);
+            // 
+            // добавитьТоварToolStripMenuItem
+            // 
+            this.добавитьТоварToolStripMenuItem.Name = "добавитьТоварToolStripMenuItem";
+            this.добавитьТоварToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.добавитьТоварToolStripMenuItem.Text = "Добавить товар";
+            this.добавитьТоварToolStripMenuItem.Visible = false;
+            this.добавитьТоварToolStripMenuItem.Click += new System.EventHandler(this.добавитьТоварToolStripMenuItem_Click);
+            // 
             // fProducts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -490,6 +535,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picProduct)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.cmsAdd.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -526,5 +572,9 @@
         private System.Windows.Forms.PictureBox picProduct;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ContextMenuStrip cmsAdd;
+        private System.Windows.Forms.ToolStripMenuItem добавитьКЗакToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem удалитьТоварToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem добавитьТоварToolStripMenuItem;
     }
 }

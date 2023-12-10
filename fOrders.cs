@@ -12,7 +12,7 @@ namespace Shop_Decor_Sentsova
 {
     public partial class fOrders : Form
     {
-        public fOrders()
+        public fOrders(List<Order> orders)
         {
             InitializeComponent();
         }

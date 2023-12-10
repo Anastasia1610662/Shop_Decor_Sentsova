@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddProduct.Designer.cs">
+      <DependentUpon>fAddProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="fAuth.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,8 +82,12 @@
     <Compile Include="fOrderWork.Designer.cs">
       <DependentUpon>fOrderWork.cs</DependentUpon>
     </Compile>
+    <Compile Include="Order.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fAddProduct.resx">
+      <DependentUpon>fAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fAuth.resx">
       <DependentUpon>fAuth.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

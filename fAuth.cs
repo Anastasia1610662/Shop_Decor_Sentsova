@@ -41,13 +41,11 @@ namespace Shop_Decor_Sentsova
         {
             string login = tbLogin.Text;
             string password = tbPassword.Text;
-
             if (String.IsNullOrEmpty(tbLogin.Text) || String.IsNullOrEmpty(tbPassword.Text))
             {
                 MessageBox.Show("Заполните все поля!", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
             try
             {
                 using (SqlConnection connectionString = new SqlConnection(SQL_CONNECTION_STRING))
@@ -65,7 +63,6 @@ namespace Shop_Decor_Sentsova
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {
                         reader.Read();
-
                         if (reader.HasRows)
                         {
                             user.UserID = reader.GetInt32(0);
@@ -104,7 +101,7 @@ namespace Shop_Decor_Sentsova
 
         private void btnGuest_Click(object sender, EventArgs e)
         {
-            user.UserRole = 4;
+            user.UserRole = 3;
             ShowProducts();
         }
 
@@ -125,7 +122,6 @@ namespace Shop_Decor_Sentsova
             {
                 MessageBox.Show($"Капча не прошла проверку!\nБлокировка возможности входа на 10 секунд.\n" +
                     $"Пожалуйста, подождите!", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
                 btnCaptcha_Check.Enabled = false;
                 btnAuth.Enabled = false;
                 await Task.Delay(10000);
@@ -136,10 +132,8 @@ namespace Shop_Decor_Sentsova
 
         private void LoadCaptcha()
         {
-            //Генерация капчи.
             picCaptcha.Visible = true;
             Random random = new Random();
-
             string chars = "1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
             for (int i = 0; i < 6; ++i)
                 WORD += chars[random.Next(chars.Length)];

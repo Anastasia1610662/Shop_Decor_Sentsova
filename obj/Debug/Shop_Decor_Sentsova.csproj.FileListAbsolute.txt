@@ -12,3 +12,4 @@ D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sents
 D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\obj\Debug\Shop_Decor_Sentsova.csproj.CoreCompileInputs.cache
 D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\obj\Debug\Shop_Decor_Sentsova.exe
 D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\obj\Debug\Shop_Decor_Sentsova.pdb
+D:\Работа\Институт\Помощь\Настя\CSharp\Shop_Decor_Sentsova\Shop_Decor_Sentsova\obj\Debug\Shop_Decor_Sentsova.fAddProduct.resources
