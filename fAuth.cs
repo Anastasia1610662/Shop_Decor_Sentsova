@@ -18,7 +18,7 @@ namespace Shop_Decor_Sentsova
         public User user;
         string DEFAULT_LOGIN = "QWERTY";
         string DEFAULT_PASSWORD = "QWERTY123";
-        public string SQL_CONNECTION_STRING = @"Data Source=SEGAWINDB\SEGAMSSQL;Initial Catalog=Supershop;Password=P@ssw0rd; User ID=SE;";
+        public string SQL_CONNECTION_STRING = @"Data Source=DESKTOP-Sentsova;Initial Catalog=Supershop;Integrated Security=True;";
 
         public struct User
         {
@@ -101,7 +101,7 @@ namespace Shop_Decor_Sentsova
 
         private void btnGuest_Click(object sender, EventArgs e)
         {
-            user.UserRole = 3;
+            user.UserRole = 4;
             ShowProducts();
         }
 

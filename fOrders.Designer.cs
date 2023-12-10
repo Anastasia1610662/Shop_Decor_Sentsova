@@ -28,21 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fOrders));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblFIO = new System.Windows.Forms.Label();
-            this.cboPickUpPoints = new System.Windows.Forms.ComboBox();
-            this.lblSortingDiscount = new System.Windows.Forms.Label();
             this.lstOrders = new System.Windows.Forms.ListBox();
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.pnlDown = new System.Windows.Forms.Panel();
             this.pnlLogo = new System.Windows.Forms.Panel();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.pnlDiscount = new System.Windows.Forms.Panel();
             this.btnTicket = new System.Windows.Forms.Button();
             this.btnMakeOrder = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.pnlProductDescription = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.lblCostDiscounts = new System.Windows.Forms.Label();
             this.lblCostS = new System.Windows.Forms.Label();
             this.lblCostWithDiscount = new System.Windows.Forms.Label();
@@ -50,67 +47,67 @@
             this.pnlPhotoProduct = new System.Windows.Forms.Panel();
             this.picProduct = new System.Windows.Forms.PictureBox();
             this.pnlUp = new System.Windows.Forms.Panel();
+            this.lblFIO = new System.Windows.Forms.Label();
+            this.cboPickUpPoints = new System.Windows.Forms.ComboBox();
+            this.lblSortingDiscount = new System.Windows.Forms.Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.удалитьТоварToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.pnlDown.SuspendLayout();
             this.pnlLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.pnlDiscount.SuspendLayout();
             this.pnlProductDescription.SuspendLayout();
             this.pnlPhotoProduct.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picProduct)).BeginInit();
             this.pnlUp.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.lstOrders);
-            this.panel1.Controls.Add(this.pnlDown);
-            this.panel1.Controls.Add(this.pnlUp);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(3, 130);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(991, 639);
+            this.panel1.Size = new System.Drawing.Size(985, 362);
             this.panel1.TabIndex = 0;
-            // 
-            // lblFIO
-            // 
-            this.lblFIO.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.lblFIO.Location = new System.Drawing.Point(662, 9);
-            this.lblFIO.Name = "lblFIO";
-            this.lblFIO.Size = new System.Drawing.Size(319, 80);
-            this.lblFIO.TabIndex = 8;
-            this.lblFIO.Text = "ФИО";
-            this.lblFIO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // cboPickUpPoints
-            // 
-            this.cboPickUpPoints.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.cboPickUpPoints.FormattingEnabled = true;
-            this.cboPickUpPoints.Location = new System.Drawing.Point(140, 32);
-            this.cboPickUpPoints.Name = "cboPickUpPoints";
-            this.cboPickUpPoints.Size = new System.Drawing.Size(351, 31);
-            this.cboPickUpPoints.TabIndex = 6;
-            // 
-            // lblSortingDiscount
-            // 
-            this.lblSortingDiscount.AutoSize = true;
-            this.lblSortingDiscount.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.lblSortingDiscount.Location = new System.Drawing.Point(12, 35);
-            this.lblSortingDiscount.Name = "lblSortingDiscount";
-            this.lblSortingDiscount.Size = new System.Drawing.Size(131, 23);
-            this.lblSortingDiscount.TabIndex = 5;
-            this.lblSortingDiscount.Text = "Пункт выдачи: ";
             // 
             // lstOrders
             // 
+            this.lstOrders.ContextMenuStrip = this.contextMenuStrip1;
             this.lstOrders.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstOrders.Font = new System.Drawing.Font("Comic Sans MS", 9F);
             this.lstOrders.FormattingEnabled = true;
             this.lstOrders.ItemHeight = 17;
-            this.lstOrders.Location = new System.Drawing.Point(0, 135);
+            this.lstOrders.Location = new System.Drawing.Point(0, 0);
             this.lstOrders.Name = "lstOrders";
-            this.lstOrders.Size = new System.Drawing.Size(991, 369);
+            this.lstOrders.Size = new System.Drawing.Size(985, 362);
             this.lstOrders.TabIndex = 6;
+            // 
+            // pnlDown
+            // 
+            this.pnlDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(153)))));
+            this.pnlDown.Controls.Add(this.pnlLogo);
+            this.pnlDown.Controls.Add(this.pnlDiscount);
+            this.pnlDown.Controls.Add(this.pnlProductDescription);
+            this.pnlDown.Controls.Add(this.pnlPhotoProduct);
+            this.pnlDown.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlDown.Location = new System.Drawing.Point(3, 501);
+            this.pnlDown.Name = "pnlDown";
+            this.pnlDown.Size = new System.Drawing.Size(985, 135);
+            this.pnlDown.TabIndex = 5;
+            // 
+            // pnlLogo
+            // 
+            this.pnlLogo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlLogo.Controls.Add(this.picLogo);
+            this.pnlLogo.Location = new System.Drawing.Point(3, 3);
+            this.pnlLogo.Name = "pnlLogo";
+            this.pnlLogo.Size = new System.Drawing.Size(177, 129);
+            this.pnlLogo.TabIndex = 2;
             // 
             // picLogo
             // 
@@ -123,28 +120,6 @@
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogo.TabIndex = 1;
             this.picLogo.TabStop = false;
-            // 
-            // pnlDown
-            // 
-            this.pnlDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(153)))));
-            this.pnlDown.Controls.Add(this.pnlLogo);
-            this.pnlDown.Controls.Add(this.pnlDiscount);
-            this.pnlDown.Controls.Add(this.pnlProductDescription);
-            this.pnlDown.Controls.Add(this.pnlPhotoProduct);
-            this.pnlDown.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlDown.Location = new System.Drawing.Point(0, 504);
-            this.pnlDown.Name = "pnlDown";
-            this.pnlDown.Size = new System.Drawing.Size(991, 135);
-            this.pnlDown.TabIndex = 5;
-            // 
-            // pnlLogo
-            // 
-            this.pnlLogo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnlLogo.Controls.Add(this.picLogo);
-            this.pnlLogo.Location = new System.Drawing.Point(3, 3);
-            this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(177, 129);
-            this.pnlLogo.TabIndex = 2;
             // 
             // pnlDiscount
             // 
@@ -170,6 +145,7 @@
             this.btnTicket.Text = "Получить талон";
             this.btnTicket.UseVisualStyleBackColor = false;
             this.btnTicket.Visible = false;
+            this.btnTicket.Click += new System.EventHandler(this.btnTicket_Click);
             // 
             // btnMakeOrder
             // 
@@ -183,6 +159,7 @@
             this.btnMakeOrder.TabIndex = 16;
             this.btnMakeOrder.Text = "Заказать";
             this.btnMakeOrder.UseVisualStyleBackColor = false;
+            this.btnMakeOrder.Click += new System.EventHandler(this.btnMakeOrder_Click);
             // 
             // btnClose
             // 
@@ -196,11 +173,11 @@
             this.btnClose.TabIndex = 15;
             this.btnClose.Text = "Выход";
             this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // pnlProductDescription
             // 
             this.pnlProductDescription.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnlProductDescription.Controls.Add(this.label1);
             this.pnlProductDescription.Controls.Add(this.lblCostDiscounts);
             this.pnlProductDescription.Controls.Add(this.lblCostS);
             this.pnlProductDescription.Controls.Add(this.lblCostWithDiscount);
@@ -210,18 +187,6 @@
             this.pnlProductDescription.Size = new System.Drawing.Size(332, 129);
             this.pnlProductDescription.TabIndex = 1;
             // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.label1.Location = new System.Drawing.Point(226, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 23);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "%";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // lblCostDiscounts
             // 
             this.lblCostDiscounts.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -229,7 +194,7 @@
             this.lblCostDiscounts.Font = new System.Drawing.Font("Comic Sans MS", 12F);
             this.lblCostDiscounts.Location = new System.Drawing.Point(207, 49);
             this.lblCostDiscounts.Name = "lblCostDiscounts";
-            this.lblCostDiscounts.Size = new System.Drawing.Size(33, 23);
+            this.lblCostDiscounts.Size = new System.Drawing.Size(118, 23);
             this.lblCostDiscounts.TabIndex = 15;
             this.lblCostDiscounts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -296,29 +261,92 @@
             this.pnlUp.Controls.Add(this.cboPickUpPoints);
             this.pnlUp.Controls.Add(this.lblSortingDiscount);
             this.pnlUp.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlUp.Location = new System.Drawing.Point(0, 0);
+            this.pnlUp.Location = new System.Drawing.Point(3, 3);
             this.pnlUp.Name = "pnlUp";
-            this.pnlUp.Size = new System.Drawing.Size(991, 135);
+            this.pnlUp.Size = new System.Drawing.Size(985, 121);
             this.pnlUp.TabIndex = 4;
+            // 
+            // lblFIO
+            // 
+            this.lblFIO.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.lblFIO.Location = new System.Drawing.Point(662, 9);
+            this.lblFIO.Name = "lblFIO";
+            this.lblFIO.Size = new System.Drawing.Size(319, 80);
+            this.lblFIO.TabIndex = 8;
+            this.lblFIO.Text = "ФИО";
+            this.lblFIO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cboPickUpPoints
+            // 
+            this.cboPickUpPoints.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.cboPickUpPoints.FormattingEnabled = true;
+            this.cboPickUpPoints.Location = new System.Drawing.Point(140, 32);
+            this.cboPickUpPoints.Name = "cboPickUpPoints";
+            this.cboPickUpPoints.Size = new System.Drawing.Size(351, 31);
+            this.cboPickUpPoints.TabIndex = 6;
+            // 
+            // lblSortingDiscount
+            // 
+            this.lblSortingDiscount.AutoSize = true;
+            this.lblSortingDiscount.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.lblSortingDiscount.Location = new System.Drawing.Point(12, 35);
+            this.lblSortingDiscount.Name = "lblSortingDiscount";
+            this.lblSortingDiscount.Size = new System.Drawing.Size(131, 23);
+            this.lblSortingDiscount.TabIndex = 5;
+            this.lblSortingDiscount.Text = "Пункт выдачи: ";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pnlDown, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pnlUp, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 368F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 144F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(991, 639);
+            this.tableLayoutPanel1.TabIndex = 7;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.удалитьТоварToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            // 
+            // удалитьТоварToolStripMenuItem
+            // 
+            this.удалитьТоварToolStripMenuItem.Name = "удалитьТоварToolStripMenuItem";
+            this.удалитьТоварToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.удалитьТоварToolStripMenuItem.Text = "Удалить товар";
+            this.удалитьТоварToolStripMenuItem.Click += new System.EventHandler(this.удалитьТоварToolStripMenuItem_Click);
             // 
             // fOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(991, 639);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "fOrders";
             this.Text = "Просмотр закза";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.pnlDown.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.pnlDiscount.ResumeLayout(false);
             this.pnlProductDescription.ResumeLayout(false);
             this.pnlPhotoProduct.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picProduct)).EndInit();
             this.pnlUp.ResumeLayout(false);
             this.pnlUp.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -335,7 +363,6 @@
         private System.Windows.Forms.Button btnMakeOrder;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Panel pnlProductDescription;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblCostDiscounts;
         private System.Windows.Forms.Label lblCostS;
         private System.Windows.Forms.Label lblCostWithDiscount;
@@ -346,5 +373,8 @@
         private System.Windows.Forms.Label lblFIO;
         private System.Windows.Forms.ComboBox cboPickUpPoints;
         private System.Windows.Forms.Label lblSortingDiscount;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem удалитьТоварToolStripMenuItem;
     }
 }

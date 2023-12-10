@@ -29,8 +29,6 @@ namespace Shop_Decor_Sentsova
             SQL_CONNECTION_STRING = sqlConn;
             ShowFunctionality();
             TableUpdate();
-
-
         }
 
         void TableUpdate()
@@ -72,33 +70,6 @@ namespace Shop_Decor_Sentsova
             }
         }
 
-        private void ShowProducts()
-        {
-            using (SqlConnection connectionString = new SqlConnection(SQL_CONNECTION_STRING))
-            {
-                try
-                {
-                    DataTable dt = new DataTable();
-                    SqlCommand cmd = new SqlCommand();
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Connection = connectionString;
-                    connectionString.Open();
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        dt.Load(reader);
-                    }
-                    dgvProducts.DataSource = dt;
-                    
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Произошёл сбой!\n{ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                connectionString.Close();
-                lblCount.Text = $"Количество товаров: {dgvProducts.RowCount} из {dgvProducts.RowCount}";
-            }
-        }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -132,22 +103,16 @@ namespace Shop_Decor_Sentsova
                     break;
             }
             lblCount.Text = $"Количество товаров: {dgvProducts.RowCount} из {ROW_COUNT}";
-            
         }
 
         private void lbSortingPrice_SelectedIndexChanged(object sender, EventArgs e)
         {
             try
             {
-                //Сортировка товаров (по возрастанию и убыванию) по стоимости.
                 if (lbSortingPrice.SelectedIndex == 0)
-                {
                     dgvProducts.Sort(dgvProducts.Columns[9], ListSortDirection.Ascending);
-                }
                 else
-                {
                     dgvProducts.Sort(dgvProducts.Columns[9], ListSortDirection.Descending);
-                }
             }
             catch
             {
@@ -167,9 +132,7 @@ namespace Shop_Decor_Sentsova
                 try
                 {
                     if (!File.Exists(photoPath))
-                    {
                         photoPath = Path.Combine(projectDirectory, $"Resources\\Images\\picture.png");
-                    }
 
                     Order order = new Order
                     {
@@ -177,8 +140,8 @@ namespace Shop_Decor_Sentsova
                         ProductCategory = dgvProducts.CurrentRow.Cells[1].Value.ToString(),
                         ProductDescription = dgvProducts.CurrentRow.Cells[2].Value.ToString(),
                         ProductManufacturer = dgvProducts.CurrentRow.Cells[5].Value.ToString(),
-                        ProductDiscountAmount = dgvProducts.CurrentRow.Cells[7].Value.ToString(),
-                        ProductCostWithDiscount = dgvProducts.CurrentRow.Cells[8].Value.ToString(),
+                        ProductDiscountAmount = dgvProducts.CurrentRow.Cells[8].Value.ToString(),
+                        ProductCostWithDiscount = ((int)dgvProducts.CurrentRow.Cells[9].Value*(100-(int)dgvProducts.CurrentRow.Cells[8].Value)/100).ToString(),
                         ProductCost = dgvProducts.CurrentRow.Cells[9].Value.ToString(),
                         ProductArticleNumber = dgvProducts.CurrentRow.Cells[10].Value.ToString(),
                         ProductPhoto = photoPath
@@ -275,7 +238,7 @@ namespace Shop_Decor_Sentsova
 
         private void btnWork_Click(object sender, EventArgs e)
         {
-            fOrderWork fOrderWork = new fOrderWork();
+            fOrderWork fOrderWork = new fOrderWork(SQL_CONNECTION_STRING);
             this.Hide();
             fOrderWork.ShowDialog();
             this.Show();
@@ -283,10 +246,10 @@ namespace Shop_Decor_Sentsova
 
         private void btnShowOrder_Click(object sender, EventArgs e)
         {
-            using (var frm = new fOrders(showOrders))
+            using (var frm = new fOrders(showOrders,SQL_CONNECTION_STRING,LOCAL_USER))
             {
                 this.Hide();
-                frm.ShowDialog();
+                frm.ShowDialog(this);
                 this.Show();
             }
             if (showOrders.Count == 0)

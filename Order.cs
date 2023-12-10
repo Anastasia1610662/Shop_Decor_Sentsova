@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Xml.Linq;
 
 namespace Shop_Decor_Sentsova
 {
@@ -40,6 +42,12 @@ namespace Shop_Decor_Sentsova
             ProductDescription = productDescription;
             ProductCostWithDiscount = productCostWithDiscount;
             ProductPhoto = productPhoto;
+        }
+
+        public override string ToString()
+        {
+            return $"{ProductArticleNumber} | Товар: {ProductName} | Производитель: {ProductManufacturer} | Категория: {ProductCategory} " +
+            $"| Скидка: {ProductDiscountAmount}% | Итоговая стоимость: {ProductCostWithDiscount}";
         }
     }
 }

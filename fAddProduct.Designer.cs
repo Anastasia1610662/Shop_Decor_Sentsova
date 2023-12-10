@@ -31,37 +31,34 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAddProduct));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtWithDiscount = new System.Windows.Forms.TextBox();
+            this.tbWithDiscount = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.tbDescription = new System.Windows.Forms.TextBox();
             this.lblDescription = new System.Windows.Forms.Label();
-            this.txtQuantity = new System.Windows.Forms.TextBox();
+            this.tbQuantity = new System.Windows.Forms.TextBox();
             this.lblQuantity = new System.Windows.Forms.Label();
-            this.txtDiscountAmount = new System.Windows.Forms.TextBox();
+            this.tbDiscountAmount = new System.Windows.Forms.TextBox();
             this.lblDiscountAmount = new System.Windows.Forms.Label();
-            this.txtCategory = new System.Windows.Forms.TextBox();
+            this.tbCategory = new System.Windows.Forms.TextBox();
             this.lblCategory = new System.Windows.Forms.Label();
-            this.txtSupplier = new System.Windows.Forms.TextBox();
+            this.tbSupplier = new System.Windows.Forms.TextBox();
             this.lblSupplier = new System.Windows.Forms.Label();
-            this.txtManufacturer = new System.Windows.Forms.TextBox();
+            this.tbManufacturer = new System.Windows.Forms.TextBox();
             this.lblManufacturer = new System.Windows.Forms.Label();
-            this.txtMaxDiscount = new System.Windows.Forms.TextBox();
+            this.tbMaxDiscount = new System.Windows.Forms.TextBox();
             this.lblMaxDiscount = new System.Windows.Forms.Label();
-            this.txtCost = new System.Windows.Forms.TextBox();
+            this.tbCost = new System.Windows.Forms.TextBox();
             this.lblCost = new System.Windows.Forms.Label();
-            this.txtUnit = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.tbName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
             this.lblArticle = new System.Windows.Forms.Label();
-            this.txtArticle = new System.Windows.Forms.TextBox();
+            this.tbArticle = new System.Windows.Forms.TextBox();
             this.pnlUp = new System.Windows.Forms.Panel();
-            this.lblPath = new System.Windows.Forms.Label();
             this.pnlDown = new System.Windows.Forms.Panel();
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.pnlDiscount = new System.Windows.Forms.Panel();
-            this.btnSavePhoto = new System.Windows.Forms.Button();
             this.btnPhoto = new System.Windows.Forms.Button();
             this.btnCostWithDiscount = new System.Windows.Forms.Button();
             this.btnAddProduct = new System.Windows.Forms.Button();
@@ -69,9 +66,9 @@
             this.pnlPhotoProduct = new System.Windows.Forms.Panel();
             this.picProduct = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.cbUnit = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.pnlUp.SuspendLayout();
             this.pnlDown.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -99,44 +96,44 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.txtWithDiscount);
+            this.panel1.Controls.Add(this.cbUnit);
+            this.panel1.Controls.Add(this.tbWithDiscount);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.txtDescription);
+            this.panel1.Controls.Add(this.tbDescription);
             this.panel1.Controls.Add(this.lblDescription);
-            this.panel1.Controls.Add(this.txtQuantity);
+            this.panel1.Controls.Add(this.tbQuantity);
             this.panel1.Controls.Add(this.lblQuantity);
-            this.panel1.Controls.Add(this.txtDiscountAmount);
+            this.panel1.Controls.Add(this.tbDiscountAmount);
             this.panel1.Controls.Add(this.lblDiscountAmount);
-            this.panel1.Controls.Add(this.txtCategory);
+            this.panel1.Controls.Add(this.tbCategory);
             this.panel1.Controls.Add(this.lblCategory);
-            this.panel1.Controls.Add(this.txtSupplier);
+            this.panel1.Controls.Add(this.tbSupplier);
             this.panel1.Controls.Add(this.lblSupplier);
-            this.panel1.Controls.Add(this.txtManufacturer);
+            this.panel1.Controls.Add(this.tbManufacturer);
             this.panel1.Controls.Add(this.lblManufacturer);
-            this.panel1.Controls.Add(this.txtMaxDiscount);
+            this.panel1.Controls.Add(this.tbMaxDiscount);
             this.panel1.Controls.Add(this.lblMaxDiscount);
-            this.panel1.Controls.Add(this.txtCost);
+            this.panel1.Controls.Add(this.tbCost);
             this.panel1.Controls.Add(this.lblCost);
-            this.panel1.Controls.Add(this.txtUnit);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txtName);
+            this.panel1.Controls.Add(this.tbName);
             this.panel1.Controls.Add(this.lblName);
             this.panel1.Controls.Add(this.lblArticle);
-            this.panel1.Controls.Add(this.txtArticle);
+            this.panel1.Controls.Add(this.tbArticle);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 95);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(815, 305);
             this.panel1.TabIndex = 6;
             // 
-            // txtWithDiscount
+            // tbWithDiscount
             // 
-            this.txtWithDiscount.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.txtWithDiscount.Location = new System.Drawing.Point(419, 227);
-            this.txtWithDiscount.Name = "txtWithDiscount";
-            this.txtWithDiscount.Size = new System.Drawing.Size(182, 30);
-            this.txtWithDiscount.TabIndex = 49;
-            this.txtWithDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbWithDiscount.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.tbWithDiscount.Location = new System.Drawing.Point(419, 227);
+            this.tbWithDiscount.Name = "tbWithDiscount";
+            this.tbWithDiscount.Size = new System.Drawing.Size(182, 30);
+            this.tbWithDiscount.TabIndex = 49;
+            this.tbWithDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -148,15 +145,15 @@
             this.label2.TabIndex = 48;
             this.label2.Text = "Стоимость со скидкой";
             // 
-            // txtDescription
+            // tbDescription
             // 
-            this.txtDescription.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.txtDescription.Location = new System.Drawing.Point(419, 122);
-            this.txtDescription.Multiline = true;
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(182, 99);
-            this.txtDescription.TabIndex = 47;
-            this.txtDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbDescription.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.tbDescription.Location = new System.Drawing.Point(419, 122);
+            this.tbDescription.Multiline = true;
+            this.tbDescription.Name = "tbDescription";
+            this.tbDescription.Size = new System.Drawing.Size(182, 99);
+            this.tbDescription.TabIndex = 47;
+            this.tbDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblDescription
             // 
@@ -168,14 +165,14 @@
             this.lblDescription.TabIndex = 46;
             this.lblDescription.Text = "Описание";
             // 
-            // txtQuantity
+            // tbQuantity
             // 
-            this.txtQuantity.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.txtQuantity.Location = new System.Drawing.Point(419, 83);
-            this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(182, 30);
-            this.txtQuantity.TabIndex = 45;
-            this.txtQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbQuantity.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.tbQuantity.Location = new System.Drawing.Point(419, 83);
+            this.tbQuantity.Name = "tbQuantity";
+            this.tbQuantity.Size = new System.Drawing.Size(182, 30);
+            this.tbQuantity.TabIndex = 45;
+            this.tbQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblQuantity
             // 
@@ -187,14 +184,14 @@
             this.lblQuantity.TabIndex = 44;
             this.lblQuantity.Text = "Кол-во на складе";
             // 
-            // txtDiscountAmount
+            // tbDiscountAmount
             // 
-            this.txtDiscountAmount.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.txtDiscountAmount.Location = new System.Drawing.Point(419, 47);
-            this.txtDiscountAmount.Name = "txtDiscountAmount";
-            this.txtDiscountAmount.Size = new System.Drawing.Size(182, 30);
-            this.txtDiscountAmount.TabIndex = 43;
-            this.txtDiscountAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbDiscountAmount.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.tbDiscountAmount.Location = new System.Drawing.Point(419, 47);
+            this.tbDiscountAmount.Name = "tbDiscountAmount";
+            this.tbDiscountAmount.Size = new System.Drawing.Size(182, 30);
+            this.tbDiscountAmount.TabIndex = 43;
+            this.tbDiscountAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblDiscountAmount
             // 
@@ -206,14 +203,14 @@
             this.lblDiscountAmount.TabIndex = 42;
             this.lblDiscountAmount.Text = "Действ. скидка";
             // 
-            // txtCategory
+            // tbCategory
             // 
-            this.txtCategory.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.txtCategory.Location = new System.Drawing.Point(419, 12);
-            this.txtCategory.Name = "txtCategory";
-            this.txtCategory.Size = new System.Drawing.Size(182, 30);
-            this.txtCategory.TabIndex = 41;
-            this.txtCategory.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCategory.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.tbCategory.Location = new System.Drawing.Point(419, 12);
+            this.tbCategory.Name = "tbCategory";
+            this.tbCategory.Size = new System.Drawing.Size(182, 30);
+            this.tbCategory.TabIndex = 41;
+            this.tbCategory.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblCategory
             // 
@@ -225,14 +222,14 @@
             this.lblCategory.TabIndex = 40;
             this.lblCategory.Text = "Категория";
             // 
-            // txtSupplier
+            // tbSupplier
             // 
-            this.txtSupplier.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.txtSupplier.Location = new System.Drawing.Point(20, 227);
-            this.txtSupplier.Name = "txtSupplier";
-            this.txtSupplier.Size = new System.Drawing.Size(182, 30);
-            this.txtSupplier.TabIndex = 39;
-            this.txtSupplier.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbSupplier.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.tbSupplier.Location = new System.Drawing.Point(20, 227);
+            this.tbSupplier.Name = "tbSupplier";
+            this.tbSupplier.Size = new System.Drawing.Size(182, 30);
+            this.tbSupplier.TabIndex = 39;
+            this.tbSupplier.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblSupplier
             // 
@@ -244,14 +241,14 @@
             this.lblSupplier.TabIndex = 38;
             this.lblSupplier.Text = "Поставщик";
             // 
-            // txtManufacturer
+            // tbManufacturer
             // 
-            this.txtManufacturer.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.txtManufacturer.Location = new System.Drawing.Point(20, 191);
-            this.txtManufacturer.Name = "txtManufacturer";
-            this.txtManufacturer.Size = new System.Drawing.Size(182, 30);
-            this.txtManufacturer.TabIndex = 37;
-            this.txtManufacturer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbManufacturer.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.tbManufacturer.Location = new System.Drawing.Point(20, 191);
+            this.tbManufacturer.Name = "tbManufacturer";
+            this.tbManufacturer.Size = new System.Drawing.Size(182, 30);
+            this.tbManufacturer.TabIndex = 37;
+            this.tbManufacturer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblManufacturer
             // 
@@ -263,14 +260,14 @@
             this.lblManufacturer.TabIndex = 36;
             this.lblManufacturer.Text = "Производитель";
             // 
-            // txtMaxDiscount
+            // tbMaxDiscount
             // 
-            this.txtMaxDiscount.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.txtMaxDiscount.Location = new System.Drawing.Point(20, 155);
-            this.txtMaxDiscount.Name = "txtMaxDiscount";
-            this.txtMaxDiscount.Size = new System.Drawing.Size(182, 30);
-            this.txtMaxDiscount.TabIndex = 35;
-            this.txtMaxDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbMaxDiscount.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.tbMaxDiscount.Location = new System.Drawing.Point(20, 155);
+            this.tbMaxDiscount.Name = "tbMaxDiscount";
+            this.tbMaxDiscount.Size = new System.Drawing.Size(182, 30);
+            this.tbMaxDiscount.TabIndex = 35;
+            this.tbMaxDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblMaxDiscount
             // 
@@ -282,14 +279,14 @@
             this.lblMaxDiscount.TabIndex = 34;
             this.lblMaxDiscount.Text = "Макс. размер скидки";
             // 
-            // txtCost
+            // tbCost
             // 
-            this.txtCost.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.txtCost.Location = new System.Drawing.Point(20, 119);
-            this.txtCost.Name = "txtCost";
-            this.txtCost.Size = new System.Drawing.Size(182, 30);
-            this.txtCost.TabIndex = 33;
-            this.txtCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCost.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.tbCost.Location = new System.Drawing.Point(20, 119);
+            this.tbCost.Name = "tbCost";
+            this.tbCost.Size = new System.Drawing.Size(182, 30);
+            this.tbCost.TabIndex = 33;
+            this.tbCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblCost
             // 
@@ -301,17 +298,6 @@
             this.lblCost.TabIndex = 32;
             this.lblCost.Text = "Стоимость товара";
             // 
-            // txtUnit
-            // 
-            this.txtUnit.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.txtUnit.Location = new System.Drawing.Point(20, 83);
-            this.txtUnit.Name = "txtUnit";
-            this.txtUnit.ReadOnly = true;
-            this.txtUnit.Size = new System.Drawing.Size(182, 30);
-            this.txtUnit.TabIndex = 31;
-            this.txtUnit.Text = "шт.";
-            this.txtUnit.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -322,14 +308,14 @@
             this.label1.TabIndex = 30;
             this.label1.Text = "Ед. измерения";
             // 
-            // txtName
+            // tbName
             // 
-            this.txtName.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.txtName.Location = new System.Drawing.Point(20, 47);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(182, 30);
-            this.txtName.TabIndex = 29;
-            this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbName.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.tbName.Location = new System.Drawing.Point(20, 47);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(182, 30);
+            this.tbName.TabIndex = 29;
+            this.tbName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblName
             // 
@@ -351,37 +337,23 @@
             this.lblArticle.TabIndex = 26;
             this.lblArticle.Text = "Артикл ";
             // 
-            // txtArticle
+            // tbArticle
             // 
-            this.txtArticle.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.txtArticle.Location = new System.Drawing.Point(20, 12);
-            this.txtArticle.Name = "txtArticle";
-            this.txtArticle.Size = new System.Drawing.Size(182, 30);
-            this.txtArticle.TabIndex = 27;
-            this.txtArticle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbArticle.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.tbArticle.Location = new System.Drawing.Point(20, 12);
+            this.tbArticle.Name = "tbArticle";
+            this.tbArticle.Size = new System.Drawing.Size(182, 30);
+            this.tbArticle.TabIndex = 27;
+            this.tbArticle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pnlUp
             // 
             this.pnlUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(153)))));
-            this.pnlUp.Controls.Add(this.lblPath);
             this.pnlUp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlUp.Location = new System.Drawing.Point(3, 3);
             this.pnlUp.Name = "pnlUp";
             this.pnlUp.Size = new System.Drawing.Size(815, 86);
             this.pnlUp.TabIndex = 7;
-            // 
-            // lblPath
-            // 
-            this.lblPath.AutoSize = true;
-            this.lblPath.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.lblPath.Location = new System.Drawing.Point(764, 53);
-            this.lblPath.Name = "lblPath";
-            this.lblPath.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.lblPath.Size = new System.Drawing.Size(32, 23);
-            this.lblPath.TabIndex = 26;
-            this.lblPath.Text = "pic";
-            this.lblPath.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.lblPath.Visible = false;
             // 
             // pnlDown
             // 
@@ -419,7 +391,6 @@
             // pnlDiscount
             // 
             this.pnlDiscount.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnlDiscount.Controls.Add(this.btnSavePhoto);
             this.pnlDiscount.Controls.Add(this.btnPhoto);
             this.pnlDiscount.Controls.Add(this.btnCostWithDiscount);
             this.pnlDiscount.Controls.Add(this.btnAddProduct);
@@ -429,20 +400,6 @@
             this.pnlDiscount.Size = new System.Drawing.Size(450, 129);
             this.pnlDiscount.TabIndex = 12;
             // 
-            // btnSavePhoto
-            // 
-            this.btnSavePhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
-            this.btnSavePhoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSavePhoto.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.btnSavePhoto.Location = new System.Drawing.Point(221, 1);
-            this.btnSavePhoto.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
-            this.btnSavePhoto.Name = "btnSavePhoto";
-            this.btnSavePhoto.Size = new System.Drawing.Size(222, 36);
-            this.btnSavePhoto.TabIndex = 21;
-            this.btnSavePhoto.Text = "Сохранить фото";
-            this.btnSavePhoto.UseVisualStyleBackColor = false;
-            this.btnSavePhoto.Visible = false;
-            // 
             // btnPhoto
             // 
             this.btnPhoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(102)))), ((int)(((byte)(0)))));
@@ -451,7 +408,7 @@
             this.btnPhoto.Location = new System.Drawing.Point(3, 1);
             this.btnPhoto.Margin = new System.Windows.Forms.Padding(3, 1, 0, 1);
             this.btnPhoto.Name = "btnPhoto";
-            this.btnPhoto.Size = new System.Drawing.Size(215, 36);
+            this.btnPhoto.Size = new System.Drawing.Size(440, 36);
             this.btnPhoto.TabIndex = 20;
             this.btnPhoto.Text = "Загрузить фото";
             this.btnPhoto.UseVisualStyleBackColor = false;
@@ -469,6 +426,7 @@
             this.btnCostWithDiscount.TabIndex = 18;
             this.btnCostWithDiscount.Text = "Подсчитать стоимость со скидкой";
             this.btnCostWithDiscount.UseVisualStyleBackColor = false;
+            this.btnCostWithDiscount.Click += new System.EventHandler(this.btnCostWithDiscount_Click);
             // 
             // btnAddProduct
             // 
@@ -525,6 +483,18 @@
             this.openFileDialog1.FilterIndex = 2;
             this.openFileDialog1.InitialDirectory = "C:\\\\";
             // 
+            // cbUnit
+            // 
+            this.cbUnit.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.cbUnit.FormattingEnabled = true;
+            this.cbUnit.Items.AddRange(new object[] {
+            "шт.",
+            "кг."});
+            this.cbUnit.Location = new System.Drawing.Point(20, 82);
+            this.cbUnit.Name = "cbUnit";
+            this.cbUnit.Size = new System.Drawing.Size(182, 31);
+            this.cbUnit.TabIndex = 50;
+            // 
             // fAddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -537,8 +507,6 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.pnlUp.ResumeLayout(false);
-            this.pnlUp.PerformLayout();
             this.pnlDown.ResumeLayout(false);
             this.pnlLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
@@ -553,35 +521,33 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtWithDiscount;
+        private System.Windows.Forms.TextBox tbWithDiscount;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtDescription;
+        private System.Windows.Forms.TextBox tbDescription;
         private System.Windows.Forms.Label lblDescription;
-        private System.Windows.Forms.TextBox txtQuantity;
+        private System.Windows.Forms.TextBox tbQuantity;
         private System.Windows.Forms.Label lblQuantity;
-        private System.Windows.Forms.TextBox txtDiscountAmount;
+        private System.Windows.Forms.TextBox tbDiscountAmount;
         private System.Windows.Forms.Label lblDiscountAmount;
-        private System.Windows.Forms.TextBox txtCategory;
+        private System.Windows.Forms.TextBox tbCategory;
         private System.Windows.Forms.Label lblCategory;
-        private System.Windows.Forms.TextBox txtSupplier;
+        private System.Windows.Forms.TextBox tbSupplier;
         private System.Windows.Forms.Label lblSupplier;
-        private System.Windows.Forms.TextBox txtManufacturer;
+        private System.Windows.Forms.TextBox tbManufacturer;
         private System.Windows.Forms.Label lblManufacturer;
-        private System.Windows.Forms.TextBox txtMaxDiscount;
+        private System.Windows.Forms.TextBox tbMaxDiscount;
         private System.Windows.Forms.Label lblMaxDiscount;
-        private System.Windows.Forms.TextBox txtCost;
+        private System.Windows.Forms.TextBox tbCost;
         private System.Windows.Forms.Label lblCost;
-        private System.Windows.Forms.TextBox txtUnit;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblArticle;
-        private System.Windows.Forms.TextBox txtArticle;
+        private System.Windows.Forms.TextBox tbArticle;
         private System.Windows.Forms.Panel pnlDown;
         private System.Windows.Forms.Panel pnlLogo;
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.Panel pnlDiscount;
-        private System.Windows.Forms.Button btnSavePhoto;
         private System.Windows.Forms.Button btnPhoto;
         private System.Windows.Forms.Button btnCostWithDiscount;
         private System.Windows.Forms.Button btnAddProduct;
@@ -589,7 +555,7 @@
         private System.Windows.Forms.Panel pnlPhotoProduct;
         private System.Windows.Forms.PictureBox picProduct;
         private System.Windows.Forms.Panel pnlUp;
-        private System.Windows.Forms.Label lblPath;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ComboBox cbUnit;
     }
 }
